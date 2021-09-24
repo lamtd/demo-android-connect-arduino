@@ -12,20 +12,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Trạng thái"
         android:id="@+id/txtTextIn"
         android:textColor="@color/accent_material_light"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView" />
+        android:layout_alignParentBottom="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Cập nhật"
         android:id="@+id/btnSend"
-        android:layout_marginTop="82dp"
-        android:layout_below="@+id/txtTextIn"
+        android:layout_below="@+id/txtServer"
+        android:layout_alignRight="@+id/txtServer"
+        android:layout_alignEnd="@+id/txtServer"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -37,13 +36,165 @@
         android:layout_marginTop="22dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Content:"
-        android:id="@+id/textView"
+        android:text="Tên Wifi:"
+        android:id="@+id/lbssid"
         android:textColor="@color/accent_material_light"
-        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtDeviceIP" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSSID"
+        android:layout_toRightOf="@+id/lbssid"
+        android:layout_toEndOf="@+id/lbssid"
+        android:layout_below="@+id/txtDeviceIP" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:id="@+id/textView2"
+        android:textColor="@color/accent_material_light"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/txtSSID"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="IP thiết bị:"
+        android:id="@+id/lbDeviceIP"
+        android:textColor="@color/accent_material_light"
+        android:paddingTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDeviceIP"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lbDeviceIP" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật Tất cả"
+        android:id="@+id/btnAllUpdate"
+        android:layout_below="@+id/btnSend"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtServer"
+        android:layout_alignEnd="@+id/txtServer" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLine1"
+        android:layout_below="@+id/txtPassword"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Dòng 1:"
+        android:id="@+id/textView"
+        android:textColor="@color/accent_material_light"
+        android:paddingTop="10dp"
+        android:layout_alignTop="@+id/txtLine1"
+        android:layout_toLeftOf="@+id/txtLine1"
+        android:layout_toStartOf="@+id/txtLine1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLine2"
+        android:layout_below="@+id/txtLine1"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLine3"
+        android:layout_below="@+id/txtLine2"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLine4"
+        android:layout_below="@+id/txtLine3"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Dòng 2:"
+        android:id="@+id/textView3"
+        android:textColor="@color/accent_material_light"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/txtLine1"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Dòng 3:"
+        android:id="@+id/textView4"
+        android:textColor="@color/accent_material_light"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/txtLine2"
+        android:layout_toLeftOf="@+id/txtLine2"
+        android:layout_toStartOf="@+id/txtLine2" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Dòng 4:"
+        android:id="@+id/textView5"
+        android:textColor="@color/accent_material_light"
+        android:paddingTop="10dp"
+        android:layout_alignTop="@+id/txtLine4"
+        android:layout_toLeftOf="@+id/txtLine4"
+        android:layout_toStartOf="@+id/txtLine4" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtServer"
+        android:layout_below="@+id/txtLine4"
+        android:layout_alignLeft="@+id/txtLine4"
+        android:layout_alignStart="@+id/txtLine4" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Server:"
+        android:id="@+id/lbServer"
+        android:textColor="@color/accent_material_light"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/txtLine4"
+        android:layout_toLeftOf="@+id/txtLine4"
+        android:layout_toStartOf="@+id/txtLine4" />
 
 </RelativeLayout>
