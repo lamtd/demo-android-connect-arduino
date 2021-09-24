@@ -1,0 +1,2 @@
+include ':app', ':BNHelper'
+project (':BNHelper').projectDir = new File('../HelperLibrary/BNHelper')
